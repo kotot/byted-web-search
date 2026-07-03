@@ -176,6 +176,10 @@ cd {baseDir} && python3 scripts/web_search.py "搜索词" [--count 10] [--type i
 | `--query-rewrite` | flag | | off | 开启查询改写优化（无需传值） |
 | `--api-key` | string | | 读环境变量 | 手动传入 API Key（优先于 `WEB_SEARCH_API_KEY`） |
 
+**环境变量**：
+- `WEB_SEARCH_API_KEY`：搜索 API 凭证。
+- `WEB_SEARCH_BASE_URL`（可选）：覆盖搜索 API 地址。配合代理网关使用时由平台注入，一般无需手工设置。
+
 > `--time-range` 支持四个快捷枚举值，也支持自定义日期区间 `YYYY-MM-DD..YYYY-MM-DD`（开始日期不能晚于结束日期）。
 
 **用户自然语言 → 参数映射**：「搜非常权威的」「只要权威来源」→ `--auth-level 1`；「要最新」→ `--time-range OneDay`；「最近一周」→ `--time-range OneWeek`；「去年到今年」→ `--time-range 2025-01-01..2026-04-09`；口语化长问、结果不稳定 → `--query-rewrite`。

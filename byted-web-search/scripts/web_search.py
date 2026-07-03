@@ -375,7 +375,7 @@ def do_search(
             TRAFFIC_TAG_HEADER: TRAFFIC_TAG_VALUE,
             "Authorization": f"Bearer {api_key}",
         }
-        url = INTERNAL_API_URL
+        url = os.getenv("WEB_SEARCH_BASE_URL", "").strip() or INTERNAL_API_URL
     else:
         if not ak or not sk:
             raise ValueError("missing volcengine credentials")
