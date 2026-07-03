@@ -278,7 +278,7 @@ def _print_api_error_hint(code: str, message: str = "") -> None:
         print(
             "提示：Key 无效。请确认：\n"
             f"  · 个人用户 Key 来自 {CONSOLE_KEY_URL}\n"
-            f"  · Agent Plan 用户 Key 来自 {AGENT_PLAN_URL}\n"
+            f"  · Agent Plan 用户 Key 来自 {AGENT_PLAN_API_KEY_URL}\n"
             "详见 references/quick-start.md",
             file=sys.stderr,
         )
@@ -482,7 +482,7 @@ def main():
             print(
                 "Error: 未找到凭证。\n"
                 f"个人用户：{CONSOLE_KEY_URL}\n"
-                f"Agent Plan 用户：{AGENT_PLAN_URL}\n"
+                f"Agent Plan 用户：{AGENT_PLAN_API_KEY_URL}\n"
                 "复制 Key 粘贴到聊天框即可。迷路了？见 references/quick-start.md",
                 file=sys.stderr,
             )
