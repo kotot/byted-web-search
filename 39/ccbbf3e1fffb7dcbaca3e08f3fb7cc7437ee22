@@ -1,0 +1,21 @@
+byted-web-search/SKILL.md
+  s_9f0485db24200c::t_b85c45cbf84f3f 3,5,26-30,42-47,70,73,83,122-129,136-139,141,144,147,153,173-181,184,208-223
+---
+{
+  "schema_version": "authorship/3.0.0",
+  "git_ai_version": "1.6.10",
+  "base_commit_sha": "39ccbbf3e1fffb7dcbaca3e08f3fb7cc7437ee22",
+  "prompts": {},
+  "sessions": {
+    "s_9f0485db24200c": {
+      "agent_id": {
+        "tool": "codex",
+        "id": "019f7e39-5c49-7ac1-9746-37ea9318e244",
+        "model": "unknown"
+      },
+      "human_author": "张骋 <zhangcheng.2023@bytedance.com>"
+    }
+  },
+  "attestation_metadata": {},
+  "remote_transcripts": {}
+}
